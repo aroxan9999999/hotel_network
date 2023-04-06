@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy cool new product</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'payment.css' %}">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+<button id="open_payment_form" class="open-button" onclick="openForm()">Open Payment Form</button>
+<a href='{% url "index" %}' id="close_payment_form" class="close-button">Close Payment Session</a>
+
+<div class="form-popup" id="myForm">
+  <form action='{% url "session" %}' class="form-container" method="post">
+      {% csrf_token %}
+    <h1>Payment</h1>
+
+    <label for="payment"><b>Payment</b></label>
+    <input type="number" min="10" placeholder="Enter many $$$$$$$" name="payment" required>
+
+    <button type="submit" class="btn">Pay</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("open_payment_form").style.display = "none";
+  document.getElementById("close_payment_form").style.display = "none";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("open_payment_form").style.display = "block";
+  document.getElementById("close_payment_form").style.display = "block";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,660 @@
+*
+    box-sizing: border-box
+    margin: 0
+
+.main
+    background: #E5E5E5
+
+.container
+    width: 1170px
+    height: 456465px
+    min-height: 789px
+    margin: 0 auto
+    font-family: 'Muller'
+    font-style: normal
+
+header
+    width: 1170px
+    height: 114px
+
+.header_list
+    display: flex
+    list-style-type: none
+    margin-bottom: 30px
+    .header_logo
+        width: 138.89px
+        height: 39.44px
+        margin-top: 30px
+        margin-right: 150px
+    .header_phone
+        margin-top: 47px
+        margin-right: 512px
+        a
+            font-weight: 500
+            font-size: 20px
+            line-height: 20px
+            color: #666666
+            text-decoration: none
+            padding-top: 25px
+    .header_right
+        margin-top: 50px
+    .header_right_icon
+        margin-right: 7px
+    .header_right_text
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        color: #CC9933
+
+.nav_list
+    list-style-type: none
+    display: flex
+    margin-right: 27px
+    height: 70px
+    margin-bottom: 70px
+    .nav_list_item
+        height: 36px
+        text-align: center
+        padding: 10px 0
+        a
+            text-decoration: none
+            color: #000
+            transition: color 0.3s ease-in-out
+    .nav_list_item a:hover
+        color: #CC9933
+
+.nav_list:first-child
+    padding: 17px
+    .nav_list_item:not(:nth-child(6n))
+        margin-right: 45px
+    .nav_list_item:nth-child(6n)
+        margin-right: 134px   
+    .left_button
+        min-width: 87px
+        height: 16px
+        font-family: 'Muller'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        color: #CC9933
+        margin-right: 80px
+        transition: color 0.3s 
+    .right_button
+        min-width: 147px
+        height: 16px
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        color: #CC9933
+        margin-right: 0px
+        transition: color 0.3s 
+    .nav_list_button
+        height: 36px
+        outline: 1px solid  #CC9933
+        background-color: #fff
+        border-radius: 7px
+    
+.nav_list:hover
+    color: #e3a019
+
+.nav_list_form .nav_list_button:hover
+    color: #ffaa00
+    cursor: pointer
+
+
+.offers_title
+    font-weight: 400
+    font-size: 40px
+    line-height: 40px
+    color: #333333
+    margin-bottom: 20px
+    margin-left: 40px
+
+.offers_wraper
+    display: flex
+    .offers_contet_wraper
+        margin-right: 24px
+        max-height: 516px
+        .offers_content
+            height: 258px
+            width: 573px
+            border-radius: 15px
+            margin-bottom: 24px
+            position: relative
+            .gradient
+                position: absolute
+                display: inline-block
+                height: 100%
+                width: 100%
+                color: white
+                background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
+                border-radius: 15px
+        .offers_content:first-child
+            background-image: url('../img/spec_img_1.png')
+        .offers_content:last-child
+            background-image: url('../img/spec_img_2.png')     
+            
+.offers_spec_content
+    position: relative
+    width: 573px
+    height: 540px
+    background: url(33.png)
+    border-radius: 15px
+    background-color: #0a0a0abc
+    background-image: url('../img/spec_img_3.png')
+
+
+.offers_content_descr
+    position: absolute
+    width: 420px
+    height: 80px
+    left: 45px
+    top: 40px
+    font-weight: 700
+    font-size: 40px
+    line-height: 40px
+    color: #FFFFFF
+
+.offers_price
+    position: absolute
+    width: 107px
+    height: 20px
+    left: 45px
+    top: 135px
+    font-weight: 400
+    font-size: 20px
+    line-height: 20px
+    color: #FFFFFF
+    opacity: 0.8
+
+.more_detailed 
+    position: absolute
+    width: 88px
+    height: 16px
+    left: 45px
+    top: 202px
+    font-weight: 400
+    font-size: 16px
+    line-height: 16px
+    a
+        color: #F0BF5F
+        text-decoration: none
+        font-size: 15px
+        transition: font-size 0.7s 
+    a:hover 
+        font-size: 16px
+
+.spec_more_detailed
+    left: 45px
+    top: 484px
+
+.spec_offers_descr
+    position: absolute
+    width: 299px
+    height: 180px
+    left: 45px
+    top: 212px
+    font-weight: 700
+    font-size: 60px
+    line-height: 60px
+    color: #FFFFFF
+
+.spec_offers_price
+    position: absolute
+    width: 142px
+    height: 30px
+    left: 45px
+    top: 407px
+    font-weight: 400
+    font-size: 30px
+    line-height: 30px
+    color: #FFFFFF
+    opacity: 1
+
+
+.special_offers
+    margin-bottom: 70px
+
+.about_us
+    min-width: 888px
+    min-height: 202px
+    margin-bottom: 70px
+    .about_us_title
+        padding: 0 
+        margin-left: 40px
+        font-weight: 400    
+        font-size: 40px
+        line-height: 40px
+        color: #333333
+        margin-bottom: 20px
+
+.about_us_descr_wraper
+    max-width: 888px
+    .about_descr
+        padding: 0
+        font-weight: 400
+        font-size: 16px
+        line-height: 200%
+        color: #000000
+    .about_descr:hover
+        outline: 3px solid #00fecf
+
+.service
+    margin-bottom: 46px
+.service_content_wraper
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    width: 100%
+    .service_content
+        width: 573px
+        height: 330px
+        margin-bottom: 24px
+    .service_content:not(:nth-child(2n))
+        margin-right: 24px
+ 
+.service_img
+            height: 165px
+            width: 100%
+            background-repeat: 
+            background-size: contain
+
+.service_title
+    font-style: normal
+    font-weight: 400
+    font-size: 40px
+    line-height: 40px
+    color: #333333
+    margin-bottom: 20px
+    margin-left: 40px
+
+.service_content_descr_wraper
+    background: #FFFFFF
+    border-radius: 15px 15px 15px 15px
+    height: 165px
+    width: 100%
+
+
+.service_content_link
+    font-weight: 500
+    font-size: 20px
+    line-height: 200%
+    color: #dda32e
+    margin-top: 20px
+    margin-left: 45px
+    text-decoration: none
+    transition: color 0.7s
+
+.service_content_link:hover
+    color: #be7f00
+    
+
+.service_content_descr
+    font-weight: 400
+    font-size: 16px
+    line-height: 200%
+    color: #000000  
+    width: 402px
+    min-height: 64px
+    margin-left: 45px
+.advantages_title
+    margin-left: 45px
+    margin-bottom: 20px
+    font-weight: 400
+    font-size: 40px
+    line-height: 40px
+    color: #333333
+
+.advantages
+    margin-bottom: 48px
+.advantages_wraper
+    display: flex
+    flex-wrap: wrap
+    min-height: 574px
+    .advantages_content
+        width: 276px
+        height: 276px
+        margin-bottom: 22px
+        background: #FFFFFF
+        border-radius: 15px
+        outline-color: white
+        transition: outline-color 0.7s
+        img
+            margin-left: 45px
+            margin-top: 42px
+            margin-bottom: 17.59px
+        .advantages_content_descr
+            width: 189px
+            min-height: 128px
+            margin-left: 45px
+            font-weight: 400
+            font-size: 16px
+            line-height: 200%
+            color: #000000
+    .advantages_content:not(:nth-child(4n))
+        margin-right: 22px
+
+.advantages_content:hover
+    outline: 2px solid
+    outline-color: #0bcdbd
+
+.accommodation_title
+    font-weight: 400
+    font-size: 40px
+    line-height: 40px
+    color: #333333
+    margin-left: 40px
+    margin-bottom: 20px
+
+.accommodation_content_wraper
+    display: flex
+    flex-wrap: wrap
+    .accommodation_content
+        position: relative
+        width: 374px
+        height: 440px
+        background: #FFFFFF
+        border-radius: 15px
+        margin-bottom: 24px
+        .accommodation_img
+            height: 217px
+            width: 100%
+            background-repeat: no-repeat
+            background-size: contain
+            margin-bottom: 32px
+        .accommodation_spec_img
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-size: contain
+        .accomodattion_content_descr_wraper
+            margin-left: 45px
+            .accommodation_price_descr
+                display: inline-block
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #999999
+                margin-right: 57px
+                margin-bottom: 16px
+                .avvommodation_price
+                    margin-right: 4px
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 20px
+                    color: #000000
+            .accommodation_rating
+                display: inline
+                .no_star
+                    font-weight: 1000000
+            .accommodation_name
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #000000
+                margin-bottom: 16px
+            .accommodation_country
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #999999
+                margin-bottom: 33px
+                display: block
+            .accommodation_link
+                text-decoration: none
+                padding: 10px 20px
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #CC9933
+                border-radius: 7px
+                outline: 2px solid #CC9933
+                transition: font-size 0.7s
+            .accommodation_link:hover
+                font-size: 17px
+                font-weight: 1000
+        .spec_content_wrap
+            position: absolute
+            top: 373px
+            left: 54px
+            min-width: 244px
+            outline: 0
+            transition: outline 0.9s ease-in-out
+            .accommodation_all_link
+                height: 40px 
+                font-weight: 500
+                font-size: 20px
+                line-height: 200%
+                text-decoration: none
+                color: #FFFFFF
+                width: 60px
+                height: 16px
+                span
+                    position: absolute
+                    height: 100%
+                    left: 225px
+                    top: 3px
+        .spec_content_wrap:hover
+            outline: 2px solid #cabfbf
+    .accommodation_content:not(:nth-child(3n))
+        margin-right: 24px
+
+.tour
+    display: inline-block
+    height: 256px
+    width: 1170px
+    background: #E9E9E9
+    border-radius: 15px
+    margin-bottom: 70px
+    .tour_title
+        font-weight: 400
+        font-size: 40px
+        line-height: 40px
+        margin-top: 45px
+        margin-left: 40px
+        margin-bottom: 20px
+    .tour_content_wraper
+        display: flex
+        width: 1080px
+        height: 106px
+        background: #FFFFFF
+        border-radius: 15px
+        margin-left: 45px
+
+        input, select
+            border: 0
+        .tour_content_descr
+            margin-top: 31px
+            font-weight: 400
+            font-size: 12px
+            line-height: 12px
+            color: #000000
+            margin-bottom: 15px
+        .tour_content_form_fly
+            display: inline-block
+            margin-right: 41px
+            select
+                width: 133px
+        .tour_content_form_city
+            margin-right: 41px
+            select
+                width: 159px
+        .tour_content_form_date
+            height: 16px
+            margin-right: 42.33px
+            input
+                width: 119.66px
+        .tour_content_form_night
+            margin-right: 45px
+            input
+                width: 96px
+        .tour_content_form_turist
+            margin-right: 51px
+            input
+                width: 100px
+        .tour_button_wraper
+            width: 108px
+            height: 42px
+            margin-top: 31px
+            button
+                width: 108px
+                height: 42px
+                border: 1px solid #CC9933
+                border-radius: 10px
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #CC9933
+                transition: border 0.8s
+            button:hover
+                cursor: pointer
+                border: 7px solid #a97100
+    .tour_content:first-child
+        margin-left: 28px
+
+.contacts
+    width: 100%
+    margin-bottom: 40px
+    .contacts_title
+        margin-left: 41px
+        font-weight: 400
+        font-size: 40px
+        line-height: 40px
+        color: #333333
+        margin-bottom: 20px
+    .contacts_adress_wraper
+        a
+            font-size: 15px
+            transition: font-size 1.9s 
+        position: relative
+        height: 618px
+        width: 1170px
+        display: flex
+        background: #FFFFFF
+        border-radius: 15px
+        .contacts_adress_container
+            display: flex
+            flex-direction: row
+            margin-left: 45px
+            margin-top: 45px
+            width: 375px
+            height: 528px
+            .conacts_adress_title_wraper
+                display: flex
+                flex-direction: column
+                margin-right: 83px
+                .contacts_title
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 20px
+                    color: #000000
+                    margin-bottom: 77px
+                    margin-left: 0px
+                .contacts_title:nth-child(3n)
+                    margin-bottom: 127px
+            .conacts_adress_link_wraper
+                a:hover
+                    font-weight: bolder
+                    font-size: 17px
+                display: flex
+                flex-direction: column
+                .contacts_adress_link
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 150%
+                    color: #000000
+                    margin-bottom: 49px
+                    a
+                        text-decoration: none
+                        color: #CC9933
+                        display: block
+                    span
+                        display: block
+    .contcts_section_photo
+        margin-left: 52px
+        margin-top: 45px
+        width: 653px
+        height: 528px
+        border-radius: 10px
+        background-image: url("../img/conatcts_section_img.png")
+        background-repeat: no-repeat
+        background-size: contain
+    button
+        position: absolute
+        align-items: center
+        width: 213px
+        height: 70px
+        border: 1px solid #CC9933
+        border-radius: 10px
+        left: 45px
+        bottom: 45px
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        color: #CC99333
+    button:hover
+        cursor: pointer
+        border: 7px solid #CC9933
+        font-style: italic
+
+.section_footer
+    width: 1170px
+    height: 341px
+    position: relative
+    background: #333333
+    border-radius: 15px
+    display: inline-block
+    .footer_frame
+        position: absolute
+        left: 738.62px
+        top: 112px
+    .lagona_icon_wraper
+        position: absolute
+        left: 1107.98px
+        top: 52.74px
+        display: flex
+        flex-direction: column
+        .lagona_icon
+            margin-bottom: 20px
+    .section_footer_content_wraper
+        margin-top: 45px
+        width: 786px
+        max-height: 100%
+        display: flex
+        margin-left: 45px
+        a
+            display: block
+            text-decoration: none
+            font-size: 16px
+            line-height: 150%
+            color: #CC9933
+            font-size: 15px
+            transition: font-size 0.9s 
+        a:hover
+            font-weight: bolder
+            font-size: 17px
+        .lagona_network
+            margin-right: 125px
+            .lagona_network_descr:first-child
+                margin-bottom: 37px
+            .lagona_network_descr:nth-child(2n)
+                margin-bottom: 40px
+            p
+                width: 302px
+                font-weight: 400
+                font-size: 16px
+                line-height: 190%
+                color: #FFFFFF
+        .lagona_adress
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 30px
+                color: #FFFFFF  
+                margin-bottom: 15px
+        .lagona_adress a:nth-child(3n)
+            margin-bottom: 15px
+        
+        
+

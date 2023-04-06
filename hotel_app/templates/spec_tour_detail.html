@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'number.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="img" style="background-image: url('{{ object.hotel.image.url }}');"></div>
+    <div class="description">
+        <h1 class="hotel_name">{{ object.hotel.name }}</h1>
+        <h2 class="number_price"> price {{ object.get_format_price }} $</h2>
+        <p class="number_descr">{{ object.description }}</p>
+        <h3>{{ object.place }}</h3>
+        <a href="" class="button button1">вернутся</a><br><br>
+        <form action="{% url 'index'  %}" method="post">
+            {% csrf_token %}
+            <input type="date" name="date" id="date" required><br><br>
+            <input style='width: 100px;' type="number" name="tourist" min=1 max='{{ object.place }}' placeholder="count man" required><br><br>
+            <input type="number" name="nights" min=1  placeholder="count nights" required><br><br>
+            <input type="hidden" value='{{ object.title }}' name="tour"><br><br>
+            <button class="button button2" type="submit">book to $</button>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

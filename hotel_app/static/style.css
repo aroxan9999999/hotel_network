@@ -1,0 +1,1066 @@
+/* line 1, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 5, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.main {
+  background: #E5E5E5;
+}
+
+/* line 8, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.container {
+  width: 1170px;
+  min-height: 3989px;
+  margin: 0 auto;
+  font-family: 'Muller';
+  font-style: normal;
+}
+
+/* line 16, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+header {
+  width: 1170px;
+  height: 114px;
+}
+.header a {
+    text-decoration: none;
+    color: #CC9933;
+    font-size: 16px;
+    transition: font-size 1.9s;
+    cursor: pointer;
+}
+
+.header a:hover{
+    font-size:17px;
+}
+/* line 21, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+/* line 24, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_logo {
+  width: 138.89px;
+  height: 39.44px;
+  margin-top: 30px;
+  margin-right: 150px;
+}
+
+/* line 29, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_phone {
+  margin-top: 47px;
+  margin-right: 512px;
+}
+
+/* line 32, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_phone a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+/* line 39, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_right {
+  margin-top: 50px;
+}
+
+/* line 41, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_right_icon {
+  margin-right: 7px;
+  margin-top: 53px;
+}
+
+/* line 43, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.header_list .header_right_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+/* line 49, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list {
+  list-style-type: none;
+  display: flex;
+  margin-right: 27px;
+  height: 70px;
+  margin-bottom: 70px;
+}
+
+/* line 55, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list .nav_list_item {
+  height: 36px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* line 59, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list .nav_list_item a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* line 63, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list .nav_list_item a:hover {
+  color: #CC9933;
+}
+
+/* line 66, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child {
+  padding: 17px;
+}
+
+/* line 68, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child .nav_list_item:not(:nth-child(6n)) {
+  margin-right: 45px;
+}
+
+/* line 70, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child .nav_list_item:nth-child(6n) {
+  margin-right: 134px;
+}
+
+/* line 72, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child .left_button {
+  min-width: 87px;
+  height: 16px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  margin-right: 80px;
+  transition: color 0.3s;
+}
+
+/* line 83, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child .right_button {
+  min-width: 147px;
+  height: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  margin-right: 0px;
+  transition: color 0.3s;
+}
+
+/* line 92, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:first-child .nav_list_button {
+  height: 36px;
+  outline: 1px solid  #CC9933;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+/* line 98, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list:hover {
+  color: #e3a019;
+}
+
+/* line 101, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.nav_list_form .nav_list_button:hover {
+  color: #ffaa00;
+  cursor: pointer;
+}
+
+/* line 106, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* line 114, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_wraper {
+  display: flex;
+}
+
+/* line 116, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_wraper .offers_contet_wraper {
+  margin-right: 24px;
+  max-height: 516px;
+}
+
+/* line 119, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_wraper .offers_contet_wraper .offers_content {
+  height: 258px;
+  width: 573px;
+  border-radius: 15px;
+  margin-bottom: 24px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 125, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_wraper .offers_contet_wraper .offers_content .gradient {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  border-radius: 15px;
+}
+
+
+/* line 138, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_spec_content {
+  position: relative;
+  width: 573px;
+  height: 540px;
+  background: url(33.png);
+  border-radius: 15px;
+  background-color: #0a0a0abc;
+}
+
+/* line 148, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_content_descr {
+  position: absolute;
+  width: 420px;
+  height: 80px;
+  left: 45px;
+  top: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+/* line 159, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.offers_price {
+  position: absolute;
+  width: 107px;
+  height: 20px;
+  left: 45px;
+  top: 135px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+/* line 171, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.more_detailed {
+  position: absolute;
+  width: 88px;
+  height: 16px;
+  left: 45px;
+  top: 202px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* line 180, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.more_detailed a {
+  color: #F0BF5F;
+  text-decoration: none;
+  font-size: 15px;
+  transition: font-size 0.7s;
+}
+
+/* line 185, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.more_detailed a:hover {
+  font-size: 16px;
+}
+
+/* line 188, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.spec_more_detailed {
+  left: 45px;
+  top: 484px;
+}
+
+/* line 192, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.spec_offers_descr {
+  position: absolute;
+  width: 299px;
+  height: 180px;
+  left: 45px;
+  top: 212px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+/* line 203, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.spec_offers_price {
+  position: absolute;
+  width: 142px;
+  height: 30px;
+  left: 45px;
+  top: 407px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/* line 216, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.special_offers {
+  margin-bottom: 70px;
+}
+
+/* line 219, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.about_us {
+  min-width: 888px;
+  min-height: 202px;
+  margin-bottom: 70px;
+}
+
+/* line 223, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.about_us .about_us_title {
+  padding: 0;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* line 232, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.about_us_descr_wraper {
+  max-width: 888px;
+}
+
+/* line 234, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.about_us_descr_wraper .about_descr {
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* line 240, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.about_us_descr_wraper .about_descr:hover {
+  outline: 3px solid #00fecf;
+}
+
+/* line 243, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service {
+  margin-bottom: 46px;
+}
+
+/* line 245, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 250, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_wraper .service_content {
+  width: 573px;
+  height: 330px;
+  margin-bottom: 24px;
+}
+
+/* line 254, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_wraper .service_content:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+/* line 257, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_img {
+  height: 165px;
+  width: 100%;
+  background-size: contain;
+}
+
+/* line 263, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* line 272, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_descr_wraper {
+  background: #FFFFFF;
+  border-radius: 15px 15px 15px 15px;
+  height: 165px;
+  width: 100%;
+}
+
+/* line 279, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #dda32e;
+  margin-top: 20px;
+  margin-left: 45px;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+/* line 289, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_link:hover {
+  color: #be7f00;
+}
+
+/* line 293, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.service_content_descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  width: 402px;
+  min-height: 64px;
+  margin-left: 45px;
+}
+
+/* line 301, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_title {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+/* line 309, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages {
+  margin-bottom: 48px;
+}
+
+/* line 311, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 574px;
+}
+
+/* line 315, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_wraper .advantages_content {
+  width: 276px;
+  height: 276px;
+  margin-bottom: 22px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  outline-color: white;
+  transition: outline-color 0.7s;
+}
+
+/* line 323, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_wraper .advantages_content img {
+  margin-left: 45px;
+  margin-top: 42px;
+  margin-bottom: 17.59px;
+}
+
+/* line 327, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_wraper .advantages_content .advantages_content_descr {
+  width: 189px;
+  min-height: 128px;
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* line 335, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_wraper .advantages_content:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+/* line 338, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.advantages_content:hover {
+  outline: 2px solid;
+  outline-color: #0bcdbd;
+}
+
+/* line 342, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 350, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 353, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content {
+  position: relative;
+  width: 374px;
+  height: 440px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+
+/* line 360, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accommodation_img {
+  height: 217px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+/* line 366, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accommodation_spec_img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* line 371, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper {
+  margin-left: 45px;
+}
+
+/* line 373, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_price_descr {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+  margin-right: 57px;
+  margin-bottom: 16px;
+}
+
+/* line 381, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_price_descr .avvommodation_price {
+  margin-right: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* line 387, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_rating {
+  display: inline;
+}
+
+/* line 389, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_rating .no_star {
+  font-weight: 1000000;
+}
+
+/* line 391, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+/* line 397, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_country {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+  margin-bottom: 33px;
+  display: block;
+}
+
+/* line 404, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_link {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border-radius: 7px;
+  outline: 2px solid #CC9933;
+  transition: font-size 0.7s;
+}
+
+/* line 414, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .accomodattion_content_descr_wraper .accommodation_link:hover {
+  font-size: 17px;
+  font-weight: 1000;
+}
+
+/* line 417, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .spec_content_wrap {
+  position: absolute;
+  top: 373px;
+  left: 54px;
+  min-width: 244px;
+  outline: 0;
+  transition: outline 0.9s ease-in-out;
+}
+
+/* line 424, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .spec_content_wrap .accommodation_all_link {
+  height: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 60px;
+  height: 16px;
+}
+
+/* line 433, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .spec_content_wrap .accommodation_all_link span {
+  position: absolute;
+  height: 100%;
+  left: 225px;
+  top: 3px;
+}
+
+/* line 438, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content .spec_content_wrap:hover {
+  outline: 2px solid #cabfbf;
+}
+
+/* line 440, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.accommodation_content_wraper .accommodation_content:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+/* line 443, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour {
+  display: inline-block;
+  height: 256px;
+  width: 1170px;
+  background: #E9E9E9;
+  border-radius: 15px;
+  margin-bottom: 70px;
+}
+
+/* line 450, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 45px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 457, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper {
+  display: flex;
+  width: 97%;
+  height: 106px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+/* line 465, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper input, .tour .tour_content_wraper select {
+  border: 0;
+}
+
+/* line 467, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_descr {
+  margin-top: 31px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* line 474, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_fly {
+  display: inline-block;
+  margin-right: 41px;
+}
+
+/* line 477, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_fly select {
+  width: 133px;
+}
+
+/* line 479, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_city {
+  margin-right: 41px;
+}
+
+/* line 481, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_city select {
+  width: 159px;
+}
+
+/* line 483, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_date {
+  height: 16px;
+  margin-right: 42.33px;
+}
+
+/* line 486, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_date input {
+  width: 119.66px;
+}
+
+/* line 488, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_night {
+  margin-right: 45px;
+}
+
+.tour .tour_content_wraper .tour_content_form_tour_name {
+  margin-right: 45px;
+}
+
+.tour .tour_content_wraper .tour_content_form_tour_name select{
+  width: 75px;
+}
+
+/* line 490, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_night input {
+  width: 96px;
+}
+
+/* line 492, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_turist {
+  margin-right: 34px;
+}
+
+/* line 494, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_content_form_turist input {
+  width: 100px;
+}
+
+/* line 496, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_button_wraper {
+  width: 108px;
+  height: 42px;
+  margin-top: 31px;
+}
+
+/* line 500, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_button_wraper button {
+  width: 108px;
+  height: 42px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  transition: border 0.8s;
+}
+
+/* line 510, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content_wraper .tour_button_wraper button:hover {
+  cursor: pointer;
+  border: 7px solid #a97100;
+}
+
+/* line 513, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.tour .tour_content:first-child {
+  margin-left: 28px;
+}
+
+/* line 516, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* line 519, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_title {
+  margin-left: 41px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* line 526, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper {
+  position: relative;
+  height: 618px;
+  width: 1170px;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+/* line 527, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper a {
+  font-size: 15px;
+  transition: font-size 1.9s;
+}
+
+/* line 536, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-top: 45px;
+  width: 375px;
+  height: 528px;
+}
+
+/* line 543, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_title_wraper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 83px;
+}
+
+/* line 547, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_title_wraper .contacts_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 77px;
+  margin-left: 0px;
+}
+
+/* line 554, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_title_wraper .contacts_title:nth-child(3n) {
+  margin-bottom: 127px;
+}
+
+/* line 556, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_link_wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 557, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_link_wraper a:hover {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+/* line 562, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_link_wraper .contacts_adress_link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 49px;
+}
+
+/* line 568, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_link_wraper .contacts_adress_link a {
+  text-decoration: none;
+  color: #CC9933;
+  display: block;
+}
+
+/* line 572, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contacts_adress_wraper .contacts_adress_container .conacts_adress_link_wraper .contacts_adress_link span {
+  display: block;
+}
+
+/* line 574, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts .contcts_section_photo {
+  margin-left: 52px;
+  margin-top: 45px;
+  width: 653px;
+  height: 528px;
+  border-radius: 10px;
+  background-image: url("../media/Hotel/conatcts_section.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 583, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts button {
+  position: absolute;
+  align-items: center;
+  width: 213px;
+  height: 70px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  left: 45px;
+  bottom: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC99333;
+}
+
+/* line 596, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.contacts button:hover {
+  cursor: pointer;
+  border: 7px solid #CC9933;
+  font-style: italic;
+}
+
+/* line 601, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer {
+  width: 1170px;
+  height: 341px;
+  position: relative;
+  background: #333333;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+/* line 608, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .footer_frame {
+  position: absolute;
+  left: 738.62px;
+  top: 112px;
+}
+
+/* line 612, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .lagona_icon_wraper {
+  position: absolute;
+  left: 1107.98px;
+  top: 52.74px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 618, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .lagona_icon_wraper .lagona_icon {
+  margin-bottom: 20px;
+}
+
+/* line 620, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper {
+  margin-top: 45px;
+  width: 786px;
+  max-height: 100%;
+  display: flex;
+  margin-left: 45px;
+}
+
+/* line 626, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  font-size: 15px;
+  transition: font-size 0.9s;
+}
+
+/* line 634, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper a:hover {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+/* line 637, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_network {
+  margin-right: 125px;
+}
+
+/* line 639, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_network .lagona_network_descr:first-child {
+  margin-bottom: 37px;
+}
+
+/* line 641, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_network .lagona_network_descr:nth-child(2n) {
+  margin-bottom: 40px;
+}
+
+/* line 643, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_network p {
+  width: 302px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+}
+
+/* line 650, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_adress p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+/* line 656, ../../L_A/hotel_site/hotel_app/templates/sass/style.sass */
+.section_footer .section_footer_content_wraper .lagona_adress a:nth-child(3n) {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.sidepanel  {
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.9;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  text-decoration: none;
+  color: #CC9933;
+  font-size: 16px;
+  transition: font-size 1.9s;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.openbtn:hover {
+  font-size:17px
+}

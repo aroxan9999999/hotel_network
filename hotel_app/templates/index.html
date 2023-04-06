@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<main class="main">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">баланс {{ user.get_many }} $</a>
+        <a href="{% url 'payments' %}">паполнить баланс</a>
+        <a href="{% url 'logaut' %}"> logaut </a>
+    </div>
+    <div class="container">
+        <section class="header">
+            <ul class="header_list">
+                <li class="header_list_item header_logo"><img src="media/Hotel/icons/logo.svg" alt="logo"></li>
+                <li class="header_list_item header_phone"><a href="tel:+74953225448">+74 95 322-54-48</a></li>
+                <li class="header_list_item header_right header_right_icon"><a href="#"><img
+                        src="media/Hotel/icons/Vector.svg" alt="vector"></a></li>
+                <li class="header_list_item header_right header_right_text">{% if user.is_authenticated %}
+                    <button class="openbtn" onclick="openNav()">Личный кабинет</button>
+                    {% else %}<a href="{% url 'login' %}">
+                        Личный кабинет</a>{% endif %}
+                </li>
+            </ul>
+        </section>
+        <section class="nav">
+            <ul class="nav_list">
+                <li class="nav_list_item"><a href="#about_us">О нас</a></li>
+                <li class="nav_list_item"><a href="#service">Услуги</a></li>
+                <li class="nav_list_item"><a href="#advantages">Преимущества</a></li>
+                <li class="nav_list_item"><a href="#accommodation">Размещение</a></li>
+                <li class="nav_list_item"><a href="#special_offers">блог</a></li>
+                <li class="nav_list_item"><a href="#contacts">Контакты</a></li>
+                <form class="nav_list_form" action="">
+                    <button class="nav_list_button left_button">Хочу тур</button>
+                    <button class="nav_list_button right_button">Обратный звонок</button>
+                </form>
+            </ul>
+        </section>
+        <article id="special_offers" class="special_offers">
+            <h2 class="offers_title">Спецпредложения</h2>
+            <div class="offers_wraper">
+                <div class="offers_contet_wraper">
+                    <div class="offers_content" style="background-image: url('{{ spec_offers.0.hotel.image.url }}');">
+                        <div class="gradient"></div>
+                        <p class="offers_content_descr">{{ spec_offers.0.title }}</p>
+                        <span class="offers_price">от {{ spec_offers.0.get_format_price  }} $</span>
+                        <span class="more_detailed"><a href="{% url 'spec_detail' %}">Подробнее ></a> </span>
+                    </div>
+                    <div class="offers_content" style="background-image: url('{{ spec_offers.1.hotel.image.url }}');">
+                        <div class="gradient"></div>
+                        <p class="offers_content_descr">{{ spec_offers.1.title }}</p>
+                        <span class="offers_price">от {{ spec_offers.1.get_format_price }} $</span>
+                        <span class="more_detailed"><a href="{% url 'spec_detail'  %}">Подробнее ></a></span>
+                    </div>
+                </div>
+                <div class="offers_spec_content" style="background-image: url('{{ spec_offers.2.hotel.image.url }}');">
+                    <p class="spec_offers_descr">
+                        {{ spec_offers.2.title }}
+                    </p>
+                    <span class="spec_offers_price">от {{ spec_offers.2.get_format_price }} $</span>
+                    <span class="more_detailed spec_more_detailed"><a href="{% url 'spec_detail'  %}">Подробнее ></a></span>
+                </div>
+            </div>
+        </article>
+        <section id="about_us" class="about_us">
+            <h2 class="about_us_title">О нас</h2>
+            <div class="about_us_descr_wraper">
+                <p class="about_descr">Идейные соображения высшего порядка, а также сложившаяся структура организации
+                    влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным
+                    потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм
+                    деятельности представляет собой интересный эксперимент проверки системы обучения кадров,
+                    соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют
+                    определения и уточнения существенных финансовых
+                    и административных условий.</p>
+            </div>
+        </section>
+        <section id="service" class="service">
+            <h2 class="service_title">Услуги</h2>
+            <div class="service_content_wraper">
+                {% for service in service_object %}
+                <div class="service_content">
+                    <div class="service_img" style="background-image: url('{{ service.photo.url }}');"></div>
+                    <div class="service_content_descr_wraper">
+                        <a href="#" class="service_content_link">{{ service.title }}</a>
+                        <p class="service_content_descr">{{ service.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section id="advantages" class="advantages">
+            <h2 class="advantages_title">Преимущества</h2>
+            <div class="advantages_wraper">
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_1.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Идейные соображения высшего порядка,
+                        а также постоянный количественный рост
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_2.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_3.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Таким образом реализация плановых заданий играет важную роль для понимания
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_4.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Повседневная практика показывает, что сложившаяся структура организации
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_5.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Равным образом рамки и место обучения кадров способствует подготовки сотрудника
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_6.svg" alt="1">
+                    <p class="advantages_content_descr">
+                        Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_7.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Повседневная практика показывает, что дальнейшее развитие различных
+                    </p>
+                </div>
+                <div class="advantages_content">
+                    <img src="media/Hotel/icons/advantages_8.svg" alt="">
+                    <p class="advantages_content_descr">
+                        Значимость этого настолько очевидна, что консультация наших экспертов помогает
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="accommodation" class="accommodation">
+            <h2 class="accommodation_title">Размещение</h2>
+            <div class="accommodation_content_wraper">
+                {% for accommodation in hotel_object %}
+                <div class="accommodation_content">
+                    <div class="accommodation_img" style="background-image: url('{{ accommodation.image.url }}')"></div>
+                    <div class="accomodattion_content_descr_wraper">
+                        <p class="accommodation_price_descr">
+                            от <span class="avvommodation_price">{{ accommodation.get_format_price }} $</span> / ночь
+                        </p>
+                        <div class="accommodation_rating">
+                            {% for star in accommodation.get_rating.0 %}
+                            <img class="star" src="media/Hotel/icons/star.svg" alt="">
+                            {% endfor %}
+                            {% for not_star in accommodation.get_rating.1 %}
+                            <img class="no_star" src="media/Hotel/icons/no_star.svg" alt="">
+                            {% endfor %}
+
+                            <br>
+                        </div>
+                        <p class="accommodation_name">{{ accommodation.name }}</p>
+                        <span class="accommodation_country">{{ accommodation.country }}</span>
+                        <a href="{% url 'detail' pk=accommodation.pk %}" class="accommodation_link">Номера</a>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="accommodation_content">
+                    <div class="accommodation_spec_img"
+                         style="background-image: url('/media/Hotel/accommodation_all.png');"></div>
+                    <div class="spec_content_wrap">
+                        <a href="" class="accommodation_all_link">Посмотреть все варианты
+                            <span><img src="media/Hotel/icons/Rectangle 2.svg" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tour">
+            <h2 class="tour_title">Хочу тур</h2>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="tour_content_wraper">
+                    <div class="tour_content">
+                        <p class="tour_content_descr">Город вылета</p>
+                        <p class="tour_content_form_fly">
+                            <select name="fly" id="1">
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Санкт-Петербург">Stepanakert</option>
+                                <option value="Санкт-Петербург">Seoul</option>
+                                <option value="Санкт-Петербург">Bunkok</option>
+                                <option value="Санкт-Петербург">Rio</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="tour_content">
+                        <p class="tour_content_descr">tour</p>
+                        <p class="tour_content_form_tour_name">
+                            <select name="tour" id="tour_name">
+                                {% for tour in spec_offers %}
+                                <option value="{{ tour.title }}">{{ tour.title }}</option>
+                                {% endfor %}
+                            </select>
+                        </p>
+                    </div>
+                    <div class="tour_content">
+                        <p class="tour_content_descr">Страна</p>
+                        <p class="tour_content_form_city">
+                            <select name="country" id="2">
+                                <option value="Росия">Росия</option>
+                                <option value="Росия">Armenia</option>
+                                <option value="Росия">Korea</option>
+                                <option value="Росия">Tailand</option>
+                                <option value="Росия">Rio Djneyro</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="tour_content">
+                        <p class="tour_content_descr">Дата прибытия</p>
+                        <p class="tour_content_form_date">
+                            <input type="date" name="date" id="date" required>
+                        </p>
+                    </div>
+                    <div class="tour_content">
+                        <p class="tour_content_descr">Ночей</p>
+                        <p class="tour_content_form_night">
+                            <input type="number" value="1" name="nights" id="">
+                        </p>
+                    </div>
+                    <div class="tour_content">
+                        <p class="tour_content_descr">Туристы</p>
+                        <p class="tour_content_form_turist">
+                            <input type="number" value="1" name="tourist" id="">
+                        </p>
+                    </div>
+                    <div class="tour_button_wraper">
+                        <button type="submit">Найти</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="contacts" class="contacts">
+            <h2 class="contacts_title">Контакты</h2>
+            <div class="contacts_adress_wraper">
+                <div class="contacts_adress_container">
+                    <div class="conacts_adress_title_wraper">
+                        <span class="contacts_title">Адрес</span>
+                        <span class="contacts_title">Телефоны</span>
+                        <span class="contacts_title">Email</span>
+                        <span class="contacts_title">График</span>
+                    </div>
+                    <div class="conacts_adress_link_wraper">
+                        <p class="contacts_adress_link">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+                        <p class="contacts_adress_link">
+                            <a href="tel:+74995356434">+7 499 535-64-34</a>
+                            <a href="tel:+74950050544">+7 495 005-05-44</a>
+                        </p>
+                        <p class="contacts_adress_link">
+                            <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                            <span>по вопросам бронирования</span>
+                            <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                            <span>по вопросам сотрудничества</span>
+                        </p>
+                        <p class="contacts_adress_link">Понедельник-пятница, с 10:00 до 19:00</p>
+                    </div>
+                </div>
+                <div class="contcts_section_photo"></div>
+                <button onclick="">Построить маршрут</button>
+            </div>
+        </section>
+        <footer id="section_footer" class="section_footer">
+            <section class="section_footer_content_wraper">
+                <div class="lagona_network">
+                    <p class="lagona_network_descr">
+                        © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
+                    </p>
+                    <p class="lagona_network_descr">
+                        Представленная на сайте информация носит справочный характер и не является публичной офертой
+                    </p>
+                    <a href="" class="lagona_network_invitations">Пользовательское соглашение</a>
+                </div>
+                <div class="lagona_adress">
+                    <p class="lagona_adress">11710, улица Юности, дом 5 строение 4, офис 2</p>
+                    <a href="">+7 499 535-64-34</a>
+                    <a href="">+7 495 005-05-44</a>
+                    <a href="">lg.oona@mail.ru</a>
+                    <a href="">hotels.ln@mail.ru</a>
+                </div>
+            </section>
+            <img class="footer_frame" src="../icons/Frame 11.svg" alt="">
+            <div class="lagona_icon_wraper">
+                <a href="#"> <img class="lagona_icon" src="media/Hotel/icons/Group.svg" alt=""></a>
+                <a href="#"> <img class="lagona_icon" src="media/Hotel/icons/ok.svg" alt=""></a>
+                <a href="#"> <img class="lagona_icon" src="media/Hotel/icons/wk.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+</main>
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
